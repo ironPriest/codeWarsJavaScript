@@ -1,0 +1,7 @@
+function maps(x){
+  var new_arr = [];
+  for (var i = 0; i < x.length; i++) {
+    new_arr[i] = x[i] * 2;
+  }
+  return new_arr;
+}
