@@ -1,0 +1,8 @@
+// Sum Numbers
+function sum (numbers) {
+  var arr_sum = 0;
+  for (var i = 0; i < numbers.length; i++) {
+    arr_sum += numbers[i];
+  }
+  return arr_sum;
+};

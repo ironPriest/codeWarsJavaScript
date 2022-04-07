@@ -1,0 +1,8 @@
+function lovefunc(flower1, flower2){
+  // moment of truth
+  var check = Math.floor((flower1 + flower2) / 2);
+  if ((flower1 + flower2) === check * 2) {
+    return false;
+  }
+  return true;
+}

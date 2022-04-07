@@ -1,0 +1,7 @@
+function simpleMultiplication(number) {
+    // your code........
+  if ((Math.floor(number / 2)) * 2 === number) {
+    return number * 8;
+  }
+  return number * 9;
+}
