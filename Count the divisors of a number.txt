@@ -1,0 +1,11 @@
+function getDivisorsCnt(n){
+    // todo
+  var count = 0;
+  var divisor = n;
+  for (divisor; divisor > 0; divisor--) {
+    if (n % divisor == 0) {
+      count++
+    }
+  }
+    return count;
+}

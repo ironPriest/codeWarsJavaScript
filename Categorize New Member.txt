@@ -1,0 +1,11 @@
+function openOrSenior(data){
+  var members = [];
+  for (var i = 0; i < data.length; i++) {
+    if ((data[i][0] >= 55) && (data[i][1] > 7)) {
+      members[i] = 'Senior';
+    } else {
+      members[i] = 'Open';
+    }
+  }
+  return members;
+}
