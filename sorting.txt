@@ -1,0 +1,30 @@
+function descendingOrder(n){
+  
+  //transform n to arr
+  let srcArr = []
+  let resArr = []
+  for (let i = 0; i < String(n).length; i++) {
+    srcArr.push(String(n)[i])
+  }
+  
+  //min function
+  function min(arr) {
+    let min = arr[0]
+    for (let i = 0; i <= arr.length - 1; i++) {
+      if (arr[i+1] < arr[i]) {
+        min = arr[i+1]
+      }
+    }
+    return min
+  }
+  
+  //mainLoop
+  for (let i = 0; i < srcArr.length; i++) {
+    let unit = min(srcArr)
+    let index = srcArr.indexOf(unit)
+    srcArr.splice(index, 1)
+    resArr.push(unit)
+  }
+  let res = resArr.join()
+  return parseInt(res)
+}
