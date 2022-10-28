@@ -1,0 +1,7 @@
+function countBy(x, n) {
+  let b = [];
+  for (let i = 1; i <= n; i++) {
+    b.push(x * i)
+  }
+  return b;
+}
